@@ -1,0 +1,21 @@
+19:55:17 **** Incremental Build of configuration Debug for project stm32c0_led ****
+make -j12 all 
+arm-none-eabi-gcc "../App/ap.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C031xx -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -I"C:/repos/stm32/stm32c0/stm32c0_led/App" -I"C:/repos/stm32/stm32c0/stm32c0_led/App/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/ap.d" -MT"App/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/ap.o"
+arm-none-eabi-gcc -o "stm32c0_led.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\repos\stm32\stm32c0\stm32c0_led\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32c0_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32c0_led.elf
+ 
+arm-none-eabi-size  stm32c0_led.elf 
+arm-none-eabi-objdump -h -S stm32c0_led.elf  > "stm32c0_led.list"
+   text	   data	    bss	    dec	    hex	filename
+   4484	     12	   1572	   6068	   17b4	stm32c0_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32c0_led.list
+ 
+19:55:21 **** Incremental Build of configuration Debug for project stm32c0_led ****
+make -j12 all 
+arm-none-eabi-size  stm32c0_led.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4484	     12	   1572	   6068	   17b4	stm32c0_led.elf
+Finished building: default.size.stdout
+ 

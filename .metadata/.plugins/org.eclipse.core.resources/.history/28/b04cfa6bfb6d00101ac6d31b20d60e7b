@@ -1,0 +1,17 @@
+/*
+ * utils.c
+ *
+ *  Created on: Jul 31, 2025
+ *      Author: wh310
+ */
+
+
+#include "utils.h"
+
+
+
+
+void delay(uint32_t time_ms)
+{
+  HAL_Dealy(time_ms);
+}

@@ -1,0 +1,25 @@
+/*
+ * ap.c
+ *
+ *  Created on: Jul 29, 2025
+ *      Author: wh310
+ */
+
+
+#include "ap.h"
+
+
+void apInit(void)
+{
+
+
+
+}
+
+void apMain(void)
+{
+  while(1)
+  {
+    HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+  }
+}
