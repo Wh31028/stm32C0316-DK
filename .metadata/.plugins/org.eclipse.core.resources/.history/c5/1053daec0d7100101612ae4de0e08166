@@ -1,0 +1,14 @@
+/*
+ * pwm.c
+ *
+ *  Created on: Aug 4, 2025
+ *      Author: wh31028
+ */
+
+
+#include "pwm.h"
+
+
+bool pwmInit(void);
+void pwmWrite(uint8_t ch,uint16_t duty);
+uint16_t pwmRead(uint8_t ch);

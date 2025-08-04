@@ -1,0 +1,55 @@
+/*
+ * led.c
+ *
+ *  Created on: Aug 4, 2025
+ *      Author: wh31028
+ */
+
+
+
+#include "led.h"
+#include "pwm.h"
+
+
+
+
+
+
+bool ledInit(void)
+{
+  return true;
+}
+void ledOn(uint8_t ch)
+{
+  switch(ch)
+  {
+    case _DEF_CH1:
+     pwmWrite(_DEF_CH1,0);
+      break;
+  }
+
+}
+void ledOff(uint8_t ch)
+{
+  switch(ch)
+  {
+    case _DEF_CH1:
+      pwmWrite(_DEF_CH1,100);
+      break;
+  }
+
+}
+void ledToggle(uint8_t ch)
+{
+  switch(ch)
+  {
+    case _DEF_CH1:
+      if(pwmRead(_DEF_CH1) > 0 )
+        ledOn(_DEF_CH1);
+      else
+        ledOff(_DEF_CH1);
+      break;
+  }
+
+}
+

@@ -1,0 +1,32 @@
+/*
+ * ap.c
+ *
+ *  Created on: Aug 4, 2025
+ *      Author: wh31028
+ */
+#include "ap.h"
+
+
+
+extern TIM_HandleTypeDef htim1;
+
+void apInit(void)
+{
+  ledInit();
+
+  HAL_TIM_PWM_Start(TIM_HandleTypeDef *htim, uint32_t Channel))
+}
+
+void apMain(void)
+{
+  uint32_t pre_time = 0;
+  while(1)
+  {
+    if(millis()-pre_time >= 500)
+    {
+      pre_time = millis();
+      ledToggle(_DEF_CH1);
+    }
+
+  }
+}
