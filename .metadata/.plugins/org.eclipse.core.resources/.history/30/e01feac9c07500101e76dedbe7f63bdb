@@ -1,0 +1,17 @@
+/*
+ * adc.c
+ *
+ *  Created on: Aug 10, 2025
+ *      Author: wh310
+ */
+
+
+#include "adc.h"
+
+
+bool adcInit(void)
+{
+  return true;
+}
+uint16_t adcRead(uint8_t ch);
+uint32_t adcReadVoltage(uint8_t ch);

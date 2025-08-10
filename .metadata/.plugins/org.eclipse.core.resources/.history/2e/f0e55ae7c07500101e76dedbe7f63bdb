@@ -1,0 +1,33 @@
+/*
+ * adc.c
+ *
+ *  Created on: Aug 10, 2025
+ *      Author: wh310
+ */
+
+
+#include "adc.h"
+
+
+extern ADC_HandleTypeDef hadc1;
+
+
+bool adcInit(void)
+{
+  return true;
+}
+
+
+uint16_t adcRead(uint8_t ch)
+{
+  HAL_ADC_Start(&hadc1);
+  HAL_ADC_PollForConversion(&hadc1,10);
+  adc_data = HAL_ADC_GetValue(&hadc1);
+
+
+}
+uint32_t adcReadVoltage(uint8_t ch)
+{
+
+
+}

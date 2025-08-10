@@ -1,0 +1,10 @@
+17:12:39 **** Incremental Build of configuration Debug for project stm32c0_adc ****
+make -j12 all 
+arm-none-eabi-size  stm32c0_adc.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14552	     16	   1752	  16320	   3fc0	stm32c0_adc.elf
+Finished building: default.size.stdout
+ 
+
+17:12:39 Build Finished. 0 errors, 0 warnings. (took 303ms)
+
