@@ -2,3 +2,8 @@
 1754807486125	Delete resource 'stm32c0_led'
 1754811633783	Delete resource 'stm32c0_adc/Debug'
 1754811640856	Delete resource 'stm32c0_adc/stm32c0_pwm Debug.launch'
+1754904265325	Delete resource 'stm32c0_adc/Debug'
+1754904348372	Delete resource 'stm32c0_adc_scan_dma/Debug'
+1754904384806	Delete resource 'stm32c0_adc_scan_dma/stm32c0_adc Debug.launch'
+1754905680954	Delete resource 'test'
+1754907269019	Delete resource 'test'
