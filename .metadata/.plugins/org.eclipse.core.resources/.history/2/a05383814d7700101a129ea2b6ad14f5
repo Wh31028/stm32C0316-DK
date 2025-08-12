@@ -1,0 +1,78 @@
+/*
+ * button.c
+ *
+ *  Created on: Aug 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "button.h"
+#include "adc.h"
+
+
+
+static const uint8_t adc_ch = _DEF_CH1;
+
+
+
+
+
+
+bool buttonInit(void)
+{
+  return true;
+}
+
+bool buttonGetPressed(uint8_t ch)
+{
+  bool ret = false;
+  uint32_t adc_voltage;
+
+
+  adc_voltage = adcReadVolage(adc_ch);
+
+
+  if(ch == _DEF_CH2)
+  {
+    if(adc_voltage < 20)///0.3V
+    {
+      ret = true;
+    }
+  }
+  if(ch == _DEF_CH1)
+    {
+      if(adc_voltage < 30)  //0.3V
+      {
+        ret = true;
+      }
+    }
+  if(ch == _DEF_CH1)
+    {
+      if(adc_voltage < 30)  //0.3V
+      {
+        ret = true;
+      }
+    }
+  if(ch == _DEF_CH1)
+    {
+      if(adc_voltage < 30)  //0.3V
+      {
+        ret = true;
+      }
+    }
+  if(ch == _DEF_CH1)
+    {
+      if(adc_voltage < 30)  //0.3V
+      {
+        ret = true;
+      }
+    }
+
+
+
+  return ret;
+}
+uint32_t buttonGetData(uint8_t ch)
+{
+
+}

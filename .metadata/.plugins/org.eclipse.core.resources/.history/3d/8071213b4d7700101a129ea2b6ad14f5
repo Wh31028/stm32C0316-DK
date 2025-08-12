@@ -1,0 +1,39 @@
+/*
+ * button.c
+ *
+ *  Created on: Aug 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "button.h"
+#include "adc.h"
+
+
+
+static const uint8_t adc_ch = _DEF_CH1;
+
+
+
+
+
+
+bool buttonInit(void)
+{
+  return true;
+}
+
+bool buttonGetPressed(uint8_t ch)
+{
+  bool ret = false;
+  uint32_t adc_data;
+
+
+  adc_data = adcReadVolage(adc_ch);
+
+  return ret;
+}
+uint32_t buttonGetData(uint8_t ch)
+{
+
+}

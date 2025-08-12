@@ -1,0 +1,100 @@
+/*
+ * button.c
+ *
+ *  Created on: Aug 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "button.h"
+#include "adc.h"
+
+typedef struct
+{
+  uint16_t adc_min;
+  uint16_t adc_max;
+} button_adc_t;
+
+
+static const uint8_t adc_ch = _DEF_CH1;
+static const button_adc_t button_adc[BUTTON_MAX_CH] =
+    {
+        {0,   20},
+        {40,  87},
+        {122,152},
+        {180,220},
+        {245,285}
+    };
+
+
+
+
+
+bool buttonInit(void)
+{
+  return true;
+}
+
+bool buttonGetPressed(uint8_t ch)
+{
+  bool ret = false;
+  uint32_t adc_voltage;
+
+  if(ch>=BUTTON_MAX_CH)
+    return false;
+
+  adc_voltage = adcReadVoltage(adc_ch);
+
+
+  if(ch == _DEF_CH1)
+  {
+    if(adc_voltage < 20) ///0V ~0.2V
+    {
+      ret = true;
+    }
+  }
+  if(ch == _DEF_CH2)
+    {
+      if(adc_voltage >= 40 && adc_voltage <= 87)
+      {
+        ret = true;
+      }
+    }
+  if(ch == _DEF_CH3)
+    {
+      if(adc_voltage >= 122 && adc_voltage <= 152)
+      {
+        ret = true;
+      }
+    }
+  if(ch == _DEF_CH4)
+    {
+      if(adc_voltage >= 180 && adc_voltage <= 220)
+      {
+        ret = true;
+      }
+    }
+  if(ch == _DEF_CH5)
+    {
+      if(adc_voltage >= 245 && adc_voltage <= 285)
+      {
+        ret = true;
+      }
+    }
+
+
+
+  return ret;
+}
+uint32_t buttonGetData(uint8_t ch)
+{
+  uint32_t ret = 0;
+
+  for(int i=0;i<BUTTON_MAX_CH;i++)
+  {
+    ret |= (buttonGetPressed(i)<<i);
+  }
+
+
+  return ret;
+}
