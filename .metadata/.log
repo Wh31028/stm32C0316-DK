@@ -1614,3 +1614,6 @@ java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.coco
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-08-12 16:31:42.173
 !MESSAGE Indexed 'stm32c0_button' (38 sources, 170 headers) in 2.1 sec: 14,547 declarations; 66,255 references; 7 unresolved inclusions; 382 syntax errors; 1,427 unresolved names (1.7%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-12 17:19:13.158
+!MESSAGE Indexed 'stm32c0_uart' (28 sources, 129 headers) in 1.13 sec: 12,004 declarations; 59,227 references; 1 unresolved inclusions; 66 syntax errors; 250 unresolved names (0.35%)

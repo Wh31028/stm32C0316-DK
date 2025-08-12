@@ -1,0 +1,38 @@
+/*
+ * uart.c
+ *
+ *  Created on: Aug 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "uart.h"
+
+
+
+
+
+bool     uartInit(void)
+{
+  return true;
+}
+
+uint32_t uartWrite(uint8_t ch,uint8_t* p_data,uint32_t length)
+{
+  uint32_t ret = 0;
+
+  HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout)
+
+  return ret;
+}
+
+
+uint32_t uartAvailable(uint8_t ch)
+{
+  return 0;
+}
+
+uint8_t  uartRead(uint8_t ch)
+{
+  return 0;
+}

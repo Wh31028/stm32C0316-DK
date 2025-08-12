@@ -1,0 +1,19 @@
+/*
+ * uart.h
+ *
+ *  Created on: Aug 12, 2025
+ *      Author: wh310
+ */
+
+#ifndef INCLUDE_UART_H_
+#define INCLUDE_UART_H_
+
+#include "def.h"
+
+bool uartInit(void);
+uint32_t uartWrite(uint8_t ch,uint8_t* p_data,uint32_t length);
+uint32_t uartAvailable(uint8_t ch);
+uint
+
+
+#endif /* INCLUDE_UART_H_ */

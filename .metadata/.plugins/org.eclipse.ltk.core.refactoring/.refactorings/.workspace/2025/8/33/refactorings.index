@@ -9,3 +9,5 @@
 1754907269019	Delete resource 'test'
 1754983917937	Delete resource 'stm32c0_button/Debug'
 1754983951280	Delete resource 'stm32c0_button/stm32c0_adc_scan_dma Debug.launch'
+1754986843744	Delete resource 'stm32c0_uart/Debug'
+1754986854273	Delete resource 'stm32c0_uart/stm32c0_button Debug.launch'
