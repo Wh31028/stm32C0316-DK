@@ -1,0 +1,71 @@
+/*
+ * uart.c
+ *
+ *  Created on: Aug 12, 2025
+ *      Author: wh310
+ */
+
+
+#include "uart.h"
+
+
+extern UART_HandleTypeDef huart1;
+
+
+bool     uartInit(void)
+{
+  return true;
+}
+
+uint32_t uartWrite(uint8_t ch,uint8_t* p_data,uint32_t length)
+{
+  uint32_t ret = 0;
+  HAL_StatusTypeDef hal_ret;
+
+
+  switch(ch)
+  {
+    case _DEF_CH1:
+      hal_ret = HAL_UART_Transmit(&huart1, p_data, length, 100);
+      if(hal_ret == HAL_OK)
+      {
+        ret = length;
+      }
+      break;
+  }
+
+  return ret;
+}
+
+
+uint32_t uartAvailable(uint8_t ch)
+{
+  return 0;
+}
+
+uint8_t  uartRead(uint8_t ch)
+{
+  return 0;
+}
+
+
+uint32_t uartPrintf(uint8_t ch,const char *fmt, ...)
+{
+  uint32_t ret = 0;
+  va_list arg;
+  char print_buf[256];
+
+  va_start(arg,fmt);
+
+  int len;
+  len = vsnprintf(print_buf,256,fmt,arg);
+
+  va_end(arg);
+
+  if(len>0)
+  {
+    ret = uartWrite(ch,(uint8_t *)print_buf,len);
+  }
+
+  return ret;
+}

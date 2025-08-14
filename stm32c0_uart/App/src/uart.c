@@ -8,12 +8,18 @@
 
 #include "uart.h"
 
+#define UART_Q_BUF_MAX     256
 
 extern UART_HandleTypeDef huart1;
 
+static uint16_t q_in =0;
+static uint16_t q_out = 0;
+static uint8_t q_buf[UART_Q_BUF_MAX];
+static uint8_t  q_data;
 
 bool     uartInit(void)
 {
+  HAL_UART_Receive_IT(&huart1, &q_data , 1); //매 바이트마다 인터럽트 하기 위해서 사이즈 1
   return true;
 }
 
@@ -40,12 +46,35 @@ uint32_t uartWrite(uint8_t ch,uint8_t* p_data,uint32_t length)
 
 uint32_t uartAvailable(uint8_t ch)
 {
-  return 0;
+  uint32_t ret = 0;
+
+  switch(ch)
+  {
+    case _DEF_CH1:
+      ret = (UART_Q_BUF_MAX + q_in - q_out) % UART_Q_BUF_MAX;
+      break;
+  }
+
+  return ret;
 }
 
 uint8_t  uartRead(uint8_t ch)
 {
-  return 0;
+  uint8_t ret = 0;
+
+  switch(ch)
+  {
+    case _DEF_CH1:
+      if( q_out != q_in)
+      {
+        ret = q_buf[q_out];
+        q_out = (q_out+1) % UART_Q_BUF_MAX;
+      }
+      break;
+  }
+
+
+  return ret;
 }
 
 
@@ -68,4 +97,23 @@ uint32_t uartPrintf(uint8_t ch,const char *fmt, ...)
   }
 
   return ret;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  if(&huart1 == huart)
+  {
+    //Buffer Write
+    uint16_t q_in_next;
+
+    q_in_next = (q_in + 1) % UART_Q_BUF_MAX;
+    if(q_in_next != q_out)
+    {
+      q_buf[q_in] = q_data;
+      q_in = q_in_next;
+    }
+
+
+    HAL_UART_Receive_IT(&huart1, &q_data , 1); // 인터럽트 한번 하면 꺼져서 이 함수에서는 그래서 다시 호출 해줘야함.
+  }
 }

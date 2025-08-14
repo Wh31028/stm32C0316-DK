@@ -19,6 +19,7 @@ void apInit(void)
   pwmInit();
   adcInit();
   buttonInit();
+  uartInit();
 }
 
 void apMain(void)
@@ -33,7 +34,6 @@ void apMain(void)
       pre_time = millis();
       ledToggle(_DEF_CH1);
 
-      uartPrintf(_DEF_CH1,"test %d\n",millis());
     }
 
 
@@ -47,5 +47,11 @@ void apMain(void)
     button_data[_BUTTON_CH_UP] = buttonGetPressed(_BUTTON_CH_UP);
     button_data[_BUTTON_CH_RIGHT] = buttonGetPressed(_BUTTON_CH_RIGHT);
 
+    if(uartAvailable(_DEF_CH1) > 0)
+    {
+      uint8_t rx_data;
+      rx_data = uartRead(_DEF_CH1);
+      uartPrintf(_DEF_CH1, "rx data : 0x%02X (%c) \n",rx_data,rx_data);
+    }
   }
 }
