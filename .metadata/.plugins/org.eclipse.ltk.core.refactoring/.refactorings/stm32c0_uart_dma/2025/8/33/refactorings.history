@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stm32c0_uart_dma/stm32c0_uart.ioc&apos; to &apos;stm32c0_uart_dma.ioc&apos;" description="Rename resource &apos;stm32c0_uart.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stm32c0_uart.ioc" name="stm32c0_uart_dma.ioc" stamp="1755170663916" updateReferences="true"/>
+</session>

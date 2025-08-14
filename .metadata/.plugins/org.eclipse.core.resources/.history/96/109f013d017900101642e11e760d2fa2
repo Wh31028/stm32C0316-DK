@@ -1,0 +1,5 @@
+../App/src/led.c:20:6:ledInit	0	static
+../App/src/led.c:24:6:ledOn	8	static
+../App/src/led.c:34:6:ledOff	8	static
+../App/src/led.c:44:6:ledToggle	8	static
+../App/src/led.c:58:6:ledSetDuty	0	static

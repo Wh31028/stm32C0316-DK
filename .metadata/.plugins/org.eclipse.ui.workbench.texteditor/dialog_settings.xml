@@ -3,6 +3,14 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="rx"/>
+		<item value="DmA rx"/>
+		<item value="DmA_ rx"/>
+		<item value="DmA_rx"/>
+		<item value="DmA"/>
+		<item value="HAL_UART_Receive_IT"/>
+		<item value="RxCpltCallback"/>
+		<item value="RX"/>
 		<item value="buttonGetData"/>
 		<item value="DMA"/>
 		<item value="Hand"/>

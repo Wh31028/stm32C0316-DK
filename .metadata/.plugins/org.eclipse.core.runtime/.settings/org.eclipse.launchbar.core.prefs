@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_pwm Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart_dma Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_adc\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_adc\ Debug/activeLaunchTarget=null\:---
@@ -29,3 +29,5 @@ org.eclipse.launchbar.core.descriptorType.default\:stm32c0_pwm\ Debug/activeLaun
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart\ Debug\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart_dma\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart_dma\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,21 +1,50 @@
-19:53:42 **** Incremental Build of configuration Debug for project stm32c0_uart ****
+20:49:08 **** Incremental Build of configuration Debug for project stm32c0_uart_dma ****
 make -j12 all 
-arm-none-eabi-gcc "../App/ap.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C031xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -I"C:/repos/stm32/stm32c0_uart/App/include" -I"C:/repos/stm32/stm32c0_uart/App/src" -I"C:/repos/stm32/stm32c0_uart/App" -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/ap.d" -MT"App/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/ap.o"
-arm-none-eabi-gcc -o "stm32c0_uart.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\repos\stm32\stm32c0_uart\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32c0_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32c0_uart.elf
- 
-arm-none-eabi-size  stm32c0_uart.elf 
-arm-none-eabi-objdump -h -S stm32c0_uart.elf  > "stm32c0_uart.list"
+arm-none-eabi-size  stm32c0_uart_dma.elf 
    text	   data	    bss	    dec	    hex	filename
-  17768	     96	   2600	  20464	   4ff0	stm32c0_uart.elf
+  15432	     96	   2696	  18224	   4730	stm32c0_uart_dma.elf
 Finished building: default.size.stdout
  
-Finished building: stm32c0_uart.list
- 
-19:53:47 **** Incremental Build of configuration Debug for project stm32c0_uart ****
+20:49:09 **** Incremental Build of configuration Debug for project stm32c0_uart_dma ****
 make -j12 all 
-arm-none-eabi-size  stm32c0_uart.elf 
+arm-none-eabi-size  stm32c0_uart_dma.elf 
    text	   data	    bss	    dec	    hex	filename
-  17768	     96	   2600	  20464	   4ff0	stm32c0_uart.elf
+  15432	     96	   2696	  18224	   4730	stm32c0_uart_dma.elf
 Finished building: default.size.stdout
+ 
+20:49:15 **** Incremental Build of configuration Debug for project stm32c0_uart_dma ****
+make -j12 all 
+arm-none-eabi-size  stm32c0_uart_dma.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15432	     96	   2696	  18224	   4730	stm32c0_uart_dma.elf
+Finished building: default.size.stdout
+ 
+20:50:13 **** Incremental Build of configuration Debug for project stm32c0_uart_dma ****
+make -j12 all 
+arm-none-eabi-gcc "../App/ap.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C031xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -I"C:/repos/stm32/stm32c0_uart_dma/App/include" -I"C:/repos/stm32/stm32c0_uart_dma/App/src" -I"C:/repos/stm32/stm32c0_uart_dma/App" -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/ap.d" -MT"App/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/ap.o"
+arm-none-eabi-gcc -o "stm32c0_uart_dma.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\repos\stm32\stm32c0_uart_dma\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32c0_uart_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32c0_uart_dma.elf
+ 
+arm-none-eabi-size  stm32c0_uart_dma.elf 
+arm-none-eabi-objdump -h -S stm32c0_uart_dma.elf  > "stm32c0_uart_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+  15480	     96	   2696	  18272	   4760	stm32c0_uart_dma.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32c0_uart_dma.list
+ 
+20:51:26 **** Incremental Build of configuration Debug for project stm32c0_uart_dma ****
+make -j12 all 
+arm-none-eabi-gcc "../App/src/uart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C031xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -I"C:/repos/stm32/stm32c0_uart_dma/App/include" -I"C:/repos/stm32/stm32c0_uart_dma/App/src" -I"C:/repos/stm32/stm32c0_uart_dma/App" -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/src/uart.d" -MT"App/src/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/src/uart.o"
+arm-none-eabi-gcc "../App/ap.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C031xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -I"C:/repos/stm32/stm32c0_uart_dma/App/include" -I"C:/repos/stm32/stm32c0_uart_dma/App/src" -I"C:/repos/stm32/stm32c0_uart_dma/App" -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/ap.d" -MT"App/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/ap.o"
+arm-none-eabi-gcc -o "stm32c0_uart_dma.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\repos\stm32\stm32c0_uart_dma\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32c0_uart_dma.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32c0_uart_dma.elf
+ 
+arm-none-eabi-size  stm32c0_uart_dma.elf 
+arm-none-eabi-objdump -h -S stm32c0_uart_dma.elf  > "stm32c0_uart_dma.list"
+   text	   data	    bss	    dec	    hex	filename
+  15436	     96	   2696	  18228	   4734	stm32c0_uart_dma.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32c0_uart_dma.list
  
