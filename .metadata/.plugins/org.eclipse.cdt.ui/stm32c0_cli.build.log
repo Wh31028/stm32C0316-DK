@@ -1,0 +1,17 @@
+12:36:18 **** Incremental Build of configuration Debug for project stm32c0_cli ****
+make -j12 all 
+arm-none-eabi-gcc "../App/ap.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C031xx -DUSE_FULL_LL_DRIVER -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -I"C:/repos/stm32/stm32c0_cli/App/include" -I"C:/repos/stm32/stm32c0_cli/App/src" -I"C:/repos/stm32/stm32c0_cli/App" -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"App/ap.d" -MT"App/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "App/ap.o"
+arm-none-eabi-gcc -o "stm32c0_cli.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\repos\stm32\stm32c0_cli\STM32C031C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32c0_cli.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32c0_cli.elf
+ 
+arm-none-eabi-size  stm32c0_cli.elf 
+arm-none-eabi-objdump -h -S stm32c0_cli.elf  > "stm32c0_cli.list"
+   text	   data	    bss	    dec	    hex	filename
+  16280	     96	   2856	  19232	   4b20	stm32c0_cli.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32c0_cli.list
+ 
+
+12:36:19 Build Finished. 0 errors, 0 warnings. (took 962ms)
+

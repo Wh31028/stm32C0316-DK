@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:stm32c0_uart_dma Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:stm32c0_cli Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_adc\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_adc\ Debug/activeLaunchTarget=null\:---
@@ -16,12 +16,16 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart\ Debug\ (1)/active
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart\ Debug\ (1)/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart_dma\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32c0_uart_dma\ Debug/activeLaunchTarget=null\:---
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_adc\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_adc\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_adc_scan_dma\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_adc_scan_dma\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_button\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_button\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:stm32c0_cli\ Debug/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:stm32c0_cli\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_led\ Debug/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_led\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:stm32c0_pwm\ Debug/activeLaunchMode=debug

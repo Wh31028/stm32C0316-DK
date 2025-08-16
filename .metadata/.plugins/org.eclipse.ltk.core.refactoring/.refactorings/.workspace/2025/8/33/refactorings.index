@@ -13,3 +13,5 @@
 1754986854273	Delete resource 'stm32c0_uart/stm32c0_button Debug.launch'
 1755170667528	Delete resource 'stm32c0_uart_dma/Debug'
 1755170670346	Delete resource 'stm32c0_uart_dma/stm32c0_uart Debug.launch'
+1755313466404	Delete resource 'stm32c0_cli/Debug'
+1755313469148	Delete resource 'stm32c0_cli/stm32c0_uart_dma Debug.launch'
