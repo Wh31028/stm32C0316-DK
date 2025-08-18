@@ -1,5 +1,5 @@
-App/ap.o: ../App/ap.c ../App/ap.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/utils.h \
+App/src/cli.o: ../App/src/cli.c \
+ C:/repos/stm32/stm32c0/stm32c0_cli/App/include/cli.h \
  C:/repos/stm32/stm32c0/stm32c0_cli/App/include/def.h ../Core/Inc/main.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_system.h \
@@ -45,14 +45,8 @@ App/ap.o: ../App/ap.c ../App/ap.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dma.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dmamux.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_gpio.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/led.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/pwm.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/adc.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/button.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/uart.h \
- C:/repos/stm32/stm32c0/stm32c0_cli/App/include/cli.h
-../App/ap.h:
-C:/repos/stm32/stm32c0/stm32c0_cli/App/include/utils.h:
+ C:/repos/stm32/stm32c0/stm32c0_cli/App/include/uart.h
+C:/repos/stm32/stm32c0/stm32c0_cli/App/include/cli.h:
 C:/repos/stm32/stm32c0/stm32c0_cli/App/include/def.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:
@@ -99,9 +93,4 @@ C:/repos/stm32/stm32c0/stm32c0_cli/App/include/def.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dma.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dmamux.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_gpio.h:
-C:/repos/stm32/stm32c0/stm32c0_cli/App/include/led.h:
-C:/repos/stm32/stm32c0/stm32c0_cli/App/include/pwm.h:
-C:/repos/stm32/stm32c0/stm32c0_cli/App/include/adc.h:
-C:/repos/stm32/stm32c0/stm32c0_cli/App/include/button.h:
 C:/repos/stm32/stm32c0/stm32c0_cli/App/include/uart.h:
-C:/repos/stm32/stm32c0/stm32c0_cli/App/include/cli.h:

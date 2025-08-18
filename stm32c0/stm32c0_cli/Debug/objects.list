@@ -1,6 +1,7 @@
 "./App/ap.o"
 "./App/src/adc.o"
 "./App/src/button.o"
+"./App/src/cli.o"
 "./App/src/led.o"
 "./App/src/pwm.o"
 "./App/src/uart.o"

@@ -7,6 +7,7 @@
 C_SRCS += \
 ../App/src/adc.c \
 ../App/src/button.c \
+../App/src/cli.c \
 ../App/src/led.c \
 ../App/src/pwm.c \
 ../App/src/uart.c \
@@ -15,6 +16,7 @@ C_SRCS += \
 OBJS += \
 ./App/src/adc.o \
 ./App/src/button.o \
+./App/src/cli.o \
 ./App/src/led.o \
 ./App/src/pwm.o \
 ./App/src/uart.o \
@@ -23,6 +25,7 @@ OBJS += \
 C_DEPS += \
 ./App/src/adc.d \
 ./App/src/button.d \
+./App/src/cli.d \
 ./App/src/led.d \
 ./App/src/pwm.d \
 ./App/src/uart.d \
@@ -36,7 +39,7 @@ App/src/%.o App/src/%.su App/src/%.cyclo: ../App/src/%.c App/src/subdir.mk
 clean: clean-App-2f-src
 
 clean-App-2f-src:
-	-$(RM) ./App/src/adc.cyclo ./App/src/adc.d ./App/src/adc.o ./App/src/adc.su ./App/src/button.cyclo ./App/src/button.d ./App/src/button.o ./App/src/button.su ./App/src/led.cyclo ./App/src/led.d ./App/src/led.o ./App/src/led.su ./App/src/pwm.cyclo ./App/src/pwm.d ./App/src/pwm.o ./App/src/pwm.su ./App/src/uart.cyclo ./App/src/uart.d ./App/src/uart.o ./App/src/uart.su ./App/src/utils.cyclo ./App/src/utils.d ./App/src/utils.o ./App/src/utils.su
+	-$(RM) ./App/src/adc.cyclo ./App/src/adc.d ./App/src/adc.o ./App/src/adc.su ./App/src/button.cyclo ./App/src/button.d ./App/src/button.o ./App/src/button.su ./App/src/cli.cyclo ./App/src/cli.d ./App/src/cli.o ./App/src/cli.su ./App/src/led.cyclo ./App/src/led.d ./App/src/led.o ./App/src/led.su ./App/src/pwm.cyclo ./App/src/pwm.d ./App/src/pwm.o ./App/src/pwm.su ./App/src/uart.cyclo ./App/src/uart.d ./App/src/uart.o ./App/src/uart.su ./App/src/utils.cyclo ./App/src/utils.d ./App/src/utils.o ./App/src/utils.su
 
 .PHONY: clean-App-2f-src
 
