@@ -1,0 +1,8 @@
+../App/src/cli.c:47:6:cliAdd	24	static
+../App/src/cli.c:37:6:cliInit	8	static
+../App/src/cli.c:71:6:cliPrintf	16	static
+../App/src/cli.c:60:6:cliHelp	8	static
+../App/src/cli.c:80:6:cliIsStr	8	static
+../App/src/cli.c:88:9:cliGetData	8	static
+../App/src/cli.c:96:6:cliKeepLoop	8	static
+../App/src/cli.c:105:6:cliMain	24	static
