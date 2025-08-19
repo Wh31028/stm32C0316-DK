@@ -1,5 +1,5 @@
 ../App/ap.c:12:6:ledISR	1
+../App/ap.c:73:6:infoCli	11
 ../App/ap.c:17:6:testISR	1
-../App/ap.c:82:6:infoCli	11
-../App/ap.c:24:6:apInit	3
-../App/ap.c:60:6:apMain	2
+../App/ap.c:24:6:apInit	2
+../App/ap.c:51:6:apMain	2
