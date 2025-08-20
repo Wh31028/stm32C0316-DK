@@ -1,0 +1,7 @@
+../App/src/rtc.c:20:6:rtcInit	1
+../App/src/rtc.c:28:6:rtcGetInfo	3
+../App/src/rtc.c:52:6:rtcGetTime	3
+../App/src/rtc.c:71:6:rtcGetDate	3
+../App/src/rtc.c:93:6:rtcSetTime	4
+../App/src/rtc.c:115:6:rtcSetDate	4
+../App/src/rtc.c:140:6:rtcCli	11

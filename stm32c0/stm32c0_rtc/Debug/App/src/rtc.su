@@ -1,0 +1,7 @@
+../App/src/rtc.c:20:6:rtcInit	8	static
+../App/src/rtc.c:28:6:rtcGetInfo	32	static
+../App/src/rtc.c:52:6:rtcGetTime	32	static
+../App/src/rtc.c:71:6:rtcGetDate	32	static
+../App/src/rtc.c:93:6:rtcSetTime	32	static
+../App/src/rtc.c:115:6:rtcSetDate	32	static
+../App/src/rtc.c:140:6:rtcCli	48	static
