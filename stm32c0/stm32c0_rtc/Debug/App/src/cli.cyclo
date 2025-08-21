@@ -5,4 +5,4 @@
 ../App/src/cli.c:80:6:cliIsStr	2
 ../App/src/cli.c:88:9:cliGetData	1
 ../App/src/cli.c:96:6:cliKeepLoop	2
-../App/src/cli.c:105:6:cliMain	8
+../App/src/cli.c:105:6:cliMain	10
